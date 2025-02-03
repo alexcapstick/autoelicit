@@ -4,7 +4,7 @@ autoelicit.
 A python package for eliciting prior knowledge from experts.
 """
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __author__ = 'Alexander Capstick'
 
 
