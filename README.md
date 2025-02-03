@@ -4,14 +4,14 @@
 
 # AutoElicit: Using Large Language Models for Expert Prior Elicitation in Predictive Modelling
 
-This python package, `autoelicit`, can be used to elicit expert priors on linear models from LLMs.
+This python package, `autoelicit`, can be used to elicit priors on linear models from large language models.
 
 This code is based on the method presented in the paper <a href="https://arxiv.org/abs/2411.17284" target="_blank">AutoElicit: Using Large Language Models for Expert Prior Elicitation in Predictive Modelling</a>
 
 
 The code to reproduce the experiments in the paper can be found in the repo <a href="https://github.com/alexcapstick/llm-elicited-priors" target="_blank">llm-elicited-priors</a>, whilst this repo contains the code to use the method in practice.
 
-Our method uses large language models (LLMs) to provide the mean and standard deviation of many Gaussian priors to be placed on the parameters of a linear model. From sampling the LLM multiple times, we form a mixture of these Gaussians, which can be used to construct linear predictive models or analysed to understand the risk factors for the target variable.
+Our method uses large language models (LLMs) to provide the mean and standard deviation of many Gaussian priors which can be placed on the parameters of a linear model. By sampling the LLM multiple times, we form a mixture of these Gaussians, which can be used to construct linear predictive models or analysed to understand the risk factors for the target variable.
 
 From our paper:
 
