@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+scikit-learn
+tqdm
+pyarrow
+ucimlrepo
+openai>=1.51.2
