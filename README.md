@@ -6,9 +6,10 @@
 
 This python package, `autoelicit`, can be used to elicit expert priors on linear models from LLMs.
 
-This code is based on the method presented in the paper [AutoElicit: Using Large Language Models for Expert Prior Elicitation in Predictive Modelling](https://arxiv.org/abs/2411.17284).
+This code is based on the method presented in the paper <a href="https://arxiv.org/abs/2411.17284" target="_blank">AutoElicit: Using Large Language Models for Expert Prior Elicitation in Predictive Modelling</a>
 
-The code to reproduce the experiments in the paper can be found in the repo [llm-elicited-priors](https://github.com/alexcapstick/llm-elicited-priors), whilst this repo contains the code to use the method in practice.
+
+The code to reproduce the experiments in the paper can be found in the repo <a href="https://github.com/alexcapstick/llm-elicited-priors" target="_blank">llm-elicited-priors</a>, whilst this repo contains the code to use the method in practice.
 
 Our method uses large language models (LLMs) to provide the mean and standard deviation of many Gaussian priors to be placed on the parameters of a linear model. From sampling the LLM multiple times, we form a mixture of these Gaussians, which can be used to construct linear predictive models or analysed to understand the risk factors for the target variable.
 
@@ -116,7 +117,7 @@ The example in the notebook would then provide a prior distribution over the par
 </p>
 
 
-These prior parameter values can be studied as risk factors for the target variable, and can be used to inform the design of a predictive model. [In our experiments](https://github.com/alexcapstick/llm-elicited-priors) we use `pymc` with these priors, but other methods could be used.
+These prior parameter values can be studied as risk factors for the target variable, and can be used to inform the design of a predictive model. <a href="https://github.com/alexcapstick/llm-elicited-priors" target="_blank">In our experiments</a> we use `pymc` with these priors, but other methods could be used.
 
 
 For example, the prior above suggests that the feature `Mean Area` is a strong positive risk factor for the target variable `Malignant`, whilst the feature `Mean Smoothness` is a negative risk factor. 
