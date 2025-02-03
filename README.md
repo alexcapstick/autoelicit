@@ -1,6 +1,6 @@
-<div id="wrapper" style="width:100%; text-align:center">
-<img src="./assets/autoelicit_logo.png" alt="AutoElicit logo" width="400"/>
-</div>
+<p align="center">
+<img src="https://github.com/alexcapstick/autoelicit/raw/main/assets/autoelicit_logo.png" alt="AutoElicit logo" width="400"/>
+</p>
 
 # AutoElicit: Using Large Language Models for Expert Prior Elicitation in Predictive Modelling
 
@@ -18,10 +18,9 @@ Given an LLM $M$ and task $T$, we obtain a single Gaussian prior for each featur
 Here, we use $K=100$ task descriptions, produced by asking an LLM to rephrase one human-written system and user role $10$ times and taking their product.
 
 Taking a mixture over the task descriptions, we construct a prior $\Pr_{M,T}(\theta)$ over linear model parameters $\theta$:
-$$
-    \Pr_{M, T}(\theta) = \sum_{k=1}^K \pi_k \mathcal{N} ( \theta | \mu_k, {\sigma_k}^2 ) 
-    ~ ~ \text{where} ~ (\mu_k, \sigma_k) \sim  \Pr_{M, T} (\mu, \sigma | I_k) ~ \text{and} ~ \pi_k \sim \text{Dir} (1)
-$$
+<p align="center">
+$$\Pr_{M, T}(\theta) = \sum_{k=1}^K \pi_k \mathcal{N} ( \theta | \mu_k, {\sigma_k}^2 ) ~ ~ \text{where} ~ (\mu_k, \sigma_k) \sim  \Pr_{M, T} (\mu, \sigma | I_k) ~ \text{and} ~ \pi_k \sim \text{Dir} (1)$$
+</p>
 
 
 ## Installation
@@ -112,9 +111,9 @@ expert_priors = get_llm_elicitation_for_dataset(
 The example in the notebook would then provide a prior distribution over the parameters such as:
 
 
-<div id="wrapper" style="width:100%; text-align:center">
-<img src="./examples/figures/breast_cancer_prior_elicitation.png" alt="AutoElicit logo" style="max-width:750px" width="100%" />
-</div>
+<p align="center">
+<img src="https://github.com/alexcapstick/autoelicit/raw/main//examples/figures/breast_cancer_prior_elicitation.png" alt="AutoElicit logo" style="max-width:750px" width="100%" />
+</p>
 
 
 These prior parameter values can be studied as risk factors for the target variable, and can be used to inform the design of a predictive model. [In our experiments](https://github.com/alexcapstick/llm-elicited-priors) we use `pymc` with these priors, but other methods could be used.
