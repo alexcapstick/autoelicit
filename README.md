@@ -39,7 +39,7 @@ We provide an example for how to use this package in the [example notebook](./ex
 
 ```python
 # import the elicitation function
-from llm_elicited_priors.gpt import (
+from autoelicit.gpt import (
     get_llm_elicitation_for_dataset
 )
 
@@ -54,9 +54,6 @@ get_llm_elicitation_for_dataset(
     user_roles=user_roles,
     # the dataset feature names
     feature_names=data.feature_names,
-    # a dictionary containing the targets
-    # and their
-    target_map=data.targets,
 )
 ```
 
