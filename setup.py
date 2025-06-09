@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='autoelicit',
-    version='0.1.14',    
+    version='0.1.15',    
     description='A python package for eliciting prior knowledge from experts using large language models.',
     long_description=long_description,
     long_description_content_type='text/markdown',
